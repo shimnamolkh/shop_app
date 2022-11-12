@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-21 10:58:19.176528",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_id",
+  "date_of_transaction",
+  "shop_owner",
+  "customer_name",
+  "ordered_items_section_section",
+  "customer_id",
+  "items_ordered",
+  "total",
+  "discount_amount",
+  "net_amount",
+  "item_id",
+  "gst",
+  "contact"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer name"
+  },
+  {
+   "fieldname": "ordered_items_section_section",
+   "fieldtype": "Section Break",
+   "label": "Ordered Items section"
+  },
+  {
+   "fieldname": "bill_id",
+   "fieldtype": "Int",
+   "label": "Bill Id"
+  },
+  {
+   "fieldname": "date_of_transaction",
+   "fieldtype": "Date",
+   "label": "Date of transaction"
+  },
+  {
+   "fieldname": "shop_owner",
+   "fieldtype": "Link",
+   "label": "Shop Owner",
+   "options": "Shop Registration"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer Id",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "items_ordered",
+   "fieldtype": "Table",
+   "label": "Items Ordered",
+   "options": "Shop Item Displays"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Int",
+   "label": "Discount amount"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Int",
+   "label": "Net amount"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Link",
+   "label": "Item id",
+   "options": "Shop Item"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Int",
+   "label": "GST"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Int",
+   "label": "Contact"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-27 10:34:14.911947",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Customer Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

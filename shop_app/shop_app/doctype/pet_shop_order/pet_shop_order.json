@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2022-10-31 11:30:05.789581",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "customer_name",
+  "phone_number",
+  "column_break_4",
+  "order_id",
+  "date",
+  "make_order_section",
+  "pets",
+  "items",
+  "column_break_10",
+  "gst",
+  "total",
+  "discount",
+  "net_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Int",
+   "label": "ID"
+  },
+  {
+   "fieldname": "make_order_section",
+   "fieldtype": "Section Break",
+   "label": "Make Order"
+  },
+  {
+   "fieldname": "pets",
+   "fieldtype": "Link",
+   "label": "Pets",
+   "options": "Pet Shop Add Pet"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Pet Shop Pets"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Int",
+   "label": "Gst"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Int",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Int",
+   "label": "Net Amount"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-02 10:25:28.400871",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Pet Shop Order",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

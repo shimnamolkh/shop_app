@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item",
+ "creation": "2022-10-23 04:50:01.116495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "order_id",
+  "order_session_section",
+  "item",
+  "column_break_29",
+  "item_number",
+  "column_break_7",
+  "price",
+  "column_break_31",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer Id",
+   "options": "Customer",
+   "unique": 1
+  },
+  {
+   "fieldname": "order_session_section",
+   "fieldtype": "Section Break",
+   "label": "Order Session"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Shop Item",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_number",
+   "fieldtype": "Int",
+   "label": "Item number"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Int",
+   "label": "Price"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "total"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "label": "Order Id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-23 05:47:50.427745",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Item Orders",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

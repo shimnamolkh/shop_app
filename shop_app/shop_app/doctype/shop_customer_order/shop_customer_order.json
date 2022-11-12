@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "order_no",
+ "creation": "2022-10-24 04:04:07.525570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number",
+  "order_no",
+  "customer_id",
+  "customer_name",
+  "order_session_section",
+  "choose_items",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "order no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer id"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer name"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Itemss",
+   "options": "Shop Item"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "label": "number"
+  },
+  {
+   "fieldname": "order_session_section",
+   "fieldtype": "Section Break",
+   "label": "Order Session"
+  },
+  {
+   "fieldname": "choose_items",
+   "fieldtype": "Link",
+   "label": "Choose items",
+   "options": "Shop Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-25 12:39:37.692820",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Shop Customer Order",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

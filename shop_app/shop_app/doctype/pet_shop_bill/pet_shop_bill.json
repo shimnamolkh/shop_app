@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-31 11:46:41.048561",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "bill_id",
+  "customer_name",
+  "phone_number",
+  "column_break_5",
+  "make_order_section",
+  "ordered_items",
+  "section_break_8",
+  "total",
+  "column_break_10",
+  "discount",
+  "column_break_12",
+  "net_amount",
+  "section_break_14",
+  "date_of_transaction",
+  "gst"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Id"
+  },
+  {
+   "fieldname": "bill_id",
+   "fieldtype": "Data",
+   "label": "Bill ID"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "make_order_section",
+   "fieldtype": "Section Break",
+   "label": "Make order"
+  },
+  {
+   "fieldname": "ordered_items",
+   "fieldtype": "Table",
+   "label": "Ordered Items",
+   "options": "Pet Shop Pets"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Int",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Int",
+   "label": "Net Amount"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_transaction",
+   "fieldtype": "Date",
+   "label": "Date Of Transaction"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Int",
+   "label": "GST"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-31 11:50:53.266700",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Pet Shop Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

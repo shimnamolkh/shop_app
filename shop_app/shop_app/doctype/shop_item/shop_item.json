@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "i_name",
+ "creation": "2022-10-20 10:52:26.014617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_number",
+  "i_id",
+  "i_name",
+  "item_image",
+  "column_break_4",
+  "i_vehicle",
+  "i_price",
+  "i_status",
+  "all_items_section",
+  "display_items",
+  "items_display"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_image",
+   "fieldtype": "Attach Image",
+   "label": "Item Image"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "i_id",
+   "fieldtype": "Int",
+   "label": "Item Id"
+  },
+  {
+   "fieldname": "i_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "i_vehicle",
+   "fieldtype": "Select",
+   "label": "Vehicle",
+   "options": "Car\nBike\nJeep\nBus"
+  },
+  {
+   "fieldname": "i_price",
+   "fieldtype": "Int",
+   "label": "Price"
+  },
+  {
+   "fieldname": "i_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nUnavailable"
+  },
+  {
+   "fieldname": "all_items_section",
+   "fieldtype": "Section Break",
+   "label": "All items"
+  },
+  {
+   "fieldname": "display_items",
+   "fieldtype": "Button",
+   "label": "Display Items"
+  },
+  {
+   "fieldname": "items_display",
+   "fieldtype": "Table",
+   "label": "Items Display",
+   "options": "Shop Item Displays"
+  },
+  {
+   "fieldname": "item_number",
+   "fieldtype": "Int",
+   "label": "Item Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-25 17:14:45.742250",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Shop Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

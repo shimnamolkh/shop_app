@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:pet_name",
+ "creation": "2022-10-31 11:20:40.267534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "idn",
+  "pet_name",
+  "pet_category",
+  "pet_price",
+  "status",
+  "number",
+  "all_items_session_section",
+  "pets",
+  "all_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "pet_name",
+   "fieldtype": "Data",
+   "label": "Pet Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "pet_category",
+   "fieldtype": "Data",
+   "label": "Pet Category",
+   "unique": 1
+  },
+  {
+   "fieldname": "pet_price",
+   "fieldtype": "Int",
+   "label": "Pet price"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nunavailable"
+  },
+  {
+   "fieldname": "idn",
+   "fieldtype": "Int",
+   "label": "idn"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "label": "Number"
+  },
+  {
+   "fieldname": "all_items_session_section",
+   "fieldtype": "Section Break",
+   "label": "All Items Session"
+  },
+  {
+   "fieldname": "pets",
+   "fieldtype": "Button",
+   "label": "Pets"
+  },
+  {
+   "fieldname": "all_items",
+   "fieldtype": "Table",
+   "label": "All Items",
+   "options": "Pet Shop Pets"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-01 17:28:39.461091",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Pet Shop Add Pet",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

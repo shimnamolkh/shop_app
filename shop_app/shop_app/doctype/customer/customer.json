@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "customer_id",
+ "creation": "2022-10-20 15:35:13.970240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_no",
+  "customer_id",
+  "customer_name",
+  "customer_dob",
+  "customer_age",
+  "customer_address",
+  "order_session_section",
+  "item_name1",
+  "order_table",
+  "from_date",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Customer Id"
+  },
+  {
+   "fieldname": "order_session_section",
+   "fieldtype": "Section Break",
+   "label": "Order Session"
+  },
+  {
+   "fieldname": "order_table",
+   "fieldtype": "Table",
+   "label": "Order Table",
+   "options": "Shop Item Displays"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_no",
+   "fieldtype": "Int",
+   "label": "Customer No"
+  },
+  {
+   "fieldname": "item_name1",
+   "fieldtype": "Link",
+   "label": "item name1",
+   "options": "Shop Item Displays"
+  },
+  {
+   "fieldname": "customer_dob",
+   "fieldtype": "Date",
+   "label": "Customer DOB"
+  },
+  {
+   "fieldname": "customer_age",
+   "fieldtype": "Int",
+   "label": "Customer Age"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Data",
+   "label": "Customer Address"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-31 10:14:17.568615",
+ "modified_by": "Administrator",
+ "module": "Shop App",
+ "name": "Customer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
